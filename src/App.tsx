@@ -1,14 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import './styles/main.scss'
 
-function App() {
-  return (
-    <div className="App">
-     
+export default class  App extends Component {
+  state = { 
+    mode: true
+  };
 
-    </div>
-  );
+
+render() {
+ 
+      return (
+        <div className=' Main' style={{backgroundColor:(this.state.mode ==true? 'whitesmoke': 'black'),
+        color: this.state.mode == true? 'black': 'whitesmoke'}}>
+          
+          <div onClick={()=>this.setState({mode:!this.state.mode})}>{this.state.mode == true ? 'Light': 'Dark'}</div>
+        </div>
+      )
+    }
 }
 
-export default App;
