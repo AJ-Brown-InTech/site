@@ -1,0 +1,20 @@
+.navbar{
+    position:fixed;
+    top: 1%;
+    font-size: 2em;
+
+    .nav-op1{
+        position:fixed;
+        left: 2%;
+    }
+    .nav-op2{
+        position:fixed;
+        right: 2%;
+    }
+    .nav-op3{
+        position:fixed;
+        right: 50%;
+        left: 50%;display: block;
+
+    }
+}
