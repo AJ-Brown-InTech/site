@@ -1,10 +1,12 @@
 body{
   margin: 0%;
   padding: 0%;
-  font-family: 'Questrial', sans-serif, 'Helvetica Neue';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 .Main {
+  font-family: 'Questrial', sans-serif, 'Helvetica Neue';
+  overflow: hidden;
   
 }
