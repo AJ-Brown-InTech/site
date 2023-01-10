@@ -1,37 +1,37 @@
 .bio{
-    height:50vh;
+    height:65vh;
     display: grid;
     grid-template-columns: 2fr .2fr 1.5fr;
     padding: 5%;
+
     .bio-1{
     background-image: url("https://images.unsplash.com/photo-1672939744516-3c7a8c38330f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
     width: 100%;
-    height: 300px;
-    font-weight: 900;
+    height: 45vh;
     background-attachment: fixed;
     background-position: 50%;
     }
-    .bio-2{
-        padding: 5%;
-        grid-template-rows: .5fr .5fr;
-        .bio-title{
-            text-transform: uppercase;
-            font-size: 5vw;
-            margin:2%;
 
-        }
-        .bio-sub1{
-            text-transform: capitalize;
-            font-size: 1.75em;
-            margin:4%;
-            color: crimson;
-        }
-        .bio-sub2{
-            text-transform: capitalize;
-            font-size: 1.75em;
-            margin:4%;
-            color:'grey';
-        }
+    .bio-2{
+    padding: 5%;
+    grid-template-rows: .5fr .5fr;
+            .bio-title{
+                text-transform: uppercase;
+                font-size: 5vw;
+                margin:2%;
+            }
+            .bio-sub1{
+                text-transform: capitalize;
+                font-size: 1.75vw;
+                margin:4%;
+                color: crimson;
+                font-weight: 400;
+            }
+            .bio-sub2{
+                text-transform: capitalize;
+                font-size: 1.75vw;
+                margin:4%;  
+            }
     }
 }
 

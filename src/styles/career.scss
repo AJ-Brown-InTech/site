@@ -1,3 +1,43 @@
 .career{
     height:100vh;
+    
+    .c-title{
+        font-size: 10vw;
+        text-align: center;
+        font-weight: 600;
+        text-transform: uppercase;
+        span{
+            font-size: 10vw;
+            text-align: center;
+            font-weight: 600;
+            text-transform: uppercase;
+        color: crimson
+        }
+    }
+
+    .c-img{
+    background-image: url("https://images.unsplash.com/photo-1559830772-13046929077b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+    height: 60vh;
+    font-weight: 900;
+    background-attachment:fixed;
+    background-position: 100%;
+    }
+
+    .c-cont{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto;
+        height: 60vh;
+        position: relative;
+        padding-left: 7%;
+        padding-right: 7%;
+        align-items: center;
+        justify-content: center;
+        p,a{
+            font-size: 1.5vw;
+            text-transform: capitalize;
+            text-decoration: none;
+        }
+        
+    }
 }
