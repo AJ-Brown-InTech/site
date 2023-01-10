@@ -1,3 +1,23 @@
 .footer{
     height:100vh;
+    ul, article{
+        padding:0%;
+        margin: 0%;
+        text-transform: capitalize;
+        text-decoration: none;
+        
+    }
+    .f-git{
+        font-size: 15vw;
+    }
+    .f-links{
+        font-size: 7vw;
+    }
+    .f-cont{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 99vh;
+    
+    }
 }

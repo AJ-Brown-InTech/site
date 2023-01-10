@@ -1,16 +1,16 @@
 .career{
-    height:100vh;
+    height:70vh;
     
     .c-title{
         font-size: 10vw;
         text-align: center;
         font-weight: 600;
-        text-transform: uppercase;
+        //text-transform: uppercase;
         span{
             font-size: 10vw;
             text-align: center;
             font-weight: 600;
-            text-transform: uppercase;
+           // text-transform: uppercase;
         color: crimson
         }
     }
@@ -35,7 +35,7 @@
         justify-content: center;
         p,a{
             font-size: 1.5vw;
-            text-transform: capitalize;
+           // text-transform: capitalize;
             text-decoration: none;
         }
         
