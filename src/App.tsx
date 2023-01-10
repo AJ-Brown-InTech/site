@@ -8,12 +8,12 @@ import Career from './Components/Career/Career'
 import Footer from './Components/Footer/Footer'
 import './styles/main.scss'
 
-interface State {
-  mode:boolean
-  setting: string
-  toggleFunc: any
-  settingFunc: any
-}
+// interface State {
+//   mode:boolean
+//   setting: string
+//   toggleFunc: any
+//   settingFunc: any
+// }
 
 export default class  App extends Component{
   state = { 

@@ -1,18 +1,43 @@
+import React, { Component } from 'react'
 import ClickAwayListener from 'react-click-away-listener';
 
- const Menu = () => {
-    const handleClickAway = () => {
-        console.log('Hey, you can close the Popup now');
-    };
- 
-    return (
-        <div id="app">
-            <ClickAwayListener onClickAway={handleClickAway}>
-                <div> Some Popup, Nav or anything </div>
-            </ClickAwayListener>
-            <div id="rest-of-the-app">Don't name a div like that :(</div>
-        </div>
-    );
-};
 
-export default Menu
+
+interface State {
+    onClick : any
+    open : boolean
+}
+  
+
+export default class  Menu extends Component {
+    state = {
+        open: false
+        }
+
+        handleClickAway () {
+            console.log(this.state)
+            this.setState({open: !(this.state.open)})
+            console.log('Hey, you can close the Popup now');
+            return
+        };
+
+        MenuHolder(){
+            if(this.state.open == false){
+                return <div> closed</div>
+            }else {
+                return <div> open</div>
+            }
+        }
+
+        render() {
+
+            return(
+        <div>
+            <ClickAwayListener onClickAway={()=>this.handleClickAway()}>
+               {this.MenuHolder()}
+            </ClickAwayListener>
+          
+        </div>
+            )
+        }
+};
