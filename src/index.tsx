@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Cont from './cont'
 import reportWebVitals from './reportWebVitals';
 
 
@@ -15,7 +15,7 @@ root.render(
   <React.StrictMode>
     
        
-        <App />
+        <Cont />
 
   </React.StrictMode>
 );
