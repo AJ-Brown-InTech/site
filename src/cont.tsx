@@ -48,7 +48,7 @@ function ScrollCont() {
       const acceleration = diff / size.width
   
       const velocity = +acceleration;
-      const skew = velocity * 80;
+      const skew = velocity * 98;
       const curr = scrollContainer?.current;
       curr.style.transform = `translate3d(0,-${skewConfigs.rounded}px,0) skewY(${skew}deg)`;
   
@@ -60,12 +60,12 @@ function ScrollCont() {
     }, [skewScrolling]);
   
     return(
-        <div ref={app} style={{height: '100vh', position: 'fixed', overflow: 'hidden'}}className="App">
+        <main ref={app} style={{height: '100vh', position: 'fixed', overflow: 'hidden'}}className="Main">
              <Cursor/>
-            <div ref={scrollContainer} style={{padding: '0vh 0', pointerEvents: 'fill'}}className="scroll">
+            <div ref={scrollContainer} style={{ pointerEvents: 'fill'}}>
                 <App />
             </div>
-        </div>
+        </main>
     )
 
 

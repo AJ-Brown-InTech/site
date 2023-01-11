@@ -20,13 +20,13 @@ constructor(props: Props){
     
    console.log(this.props)
     return (
-    <div className="navbar" >
+    <article className="navbar" >
       <section className="nav-op1" 
       style={{border: (this.props.setting == "Light"? '1px solid black': '1px solid whitesmoke')}} onClick={()=>{this.props.toggleFunc(); this.props.settingFunc()}}>
       {this.props.setting}
       </section>
       {/* <section className="nav-op2"><Menu/></section> */}
-    </div>
+    </article>
     )
   }
 }
