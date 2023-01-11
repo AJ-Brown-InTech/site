@@ -1,22 +1,39 @@
+
+@media (max-width:1200px){
+    //header
 .header{
-height: 100vh;
-font-size: 20vw;
-font-weight: 500;
-//text-transform: uppercase;
-line-height: 80%;
-letter-spacing:.2ch;
-padding: 4%;
-
-
-    .h-child1{
-       
-    }
+    text-align: center;
+    height: 100vh;
+    font-size: 20vw;
+    font-weight: 500;
     .h-child2{
-    color: crimson;
-    text-align: right;
-    }
-    .h-child3{
+      color: crimson;
+      }
+  }
+}
+@media (min-width: 1200px) {
+    /* … */
     
-    }
+    .header{
+    height: 100vh;
+    font-size: 20vw;
+    font-weight: 500;
+    //text-transform: uppercase;
+    line-height: 80%;
+    letter-spacing:.2ch;
+    padding: 4%;
 
+
+        .h-child1:hover{
+       text-decoration: underline;
+         }
+        .h-child2{
+        color: crimson;
+        text-align: right;
+        }
+        .h-child3:hover{
+            text-decoration:line-through;
+        }
+
+    }
 }

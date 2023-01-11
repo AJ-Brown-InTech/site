@@ -1,3 +1,40 @@
+@media (max-width: 1250px){
+    .bio{
+        text-align: center;
+        height: 100vh;
+        .bio-1{
+          background-image: url("https://images.unsplash.com/photo-1672862273558-0608c644a41a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+          width: 100%;
+          height: 45vh;
+          background-attachment: fixed;
+          background-position: 50%;
+          }
+          .bio-2{
+            padding: 5%;
+            grid-template-rows: .5fr .5fr;
+                    .bio-title{
+                        // text-transform: uppercase;
+                        font-size: 10vw;
+                        margin:2%;
+                        font-weight: 600;
+                    }
+                    .bio-sub1{
+                        text-transform: capitalize;
+                        font-size: 6vw;
+                        margin:4%;
+                        color: crimson;
+                        font-weight: 400;
+                    }
+                    .bio-sub2{
+                       // text-transform: capitalize;
+                        font-size: 1.75vw;
+                        margin:4%;  
+                    }
+            }
+      }
+      
+}
+@media (min-width: 1250px) {
 .bio{
     height:70vh;
     display: grid;
@@ -5,11 +42,15 @@
     padding: 5%;
 
     .bio-1{
-    background-image: url("https://images.unsplash.com/photo-1672939744516-3c7a8c38330f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+    background-image: url("https://images.unsplash.com/photo-1672862273558-0608c644a41a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
     width: 100%;
     height: 45vh;
     background-attachment: fixed;
     background-position: 50%;
+    
+    }
+    .bio-1:hover{
+        filter: invert(100%);
     }
 
     .bio-2{
@@ -22,7 +63,7 @@
                 font-weight: 600;
             }
             .bio-sub1{
-                // text-transform: capitalize;
+                text-transform: capitalize;
                 font-size: 1.75vw;
                 margin:4%;
                 color: crimson;
@@ -36,3 +77,4 @@
     }
 }
 
+}

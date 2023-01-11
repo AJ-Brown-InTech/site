@@ -10,7 +10,7 @@ export default class Bio extends Component {
       <section className='bio-2'>
         <article className='bio-title'>I'm a software developer</article>
         <article className='bio-sub1'>My mission is to build experiences through software</article>
-        <article className='bio-sub2'>...</article>
+        <article className='bio-sub2'></article>
       </section>  
       </div>
     )

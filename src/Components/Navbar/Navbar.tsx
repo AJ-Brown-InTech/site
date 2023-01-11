@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import '../../styles/navbar.scss'
-import Menu from '../../lib/menu'
+//import Menu from '../../lib/menu'
 interface Props{
   setting: string
   mode:boolean
@@ -17,14 +17,15 @@ constructor(props: Props){
 
 
   render(){
+    
    console.log(this.props)
-   
     return (
     <div className="navbar" >
-      <section className="nav-op1" onClick={()=>{this.props.toggleFunc(); this.props.settingFunc()}}>
+      <section className="nav-op1" 
+      style={{border: (this.props.setting == "Light"? '1px solid black': '1px solid whitesmoke')}} onClick={()=>{this.props.toggleFunc(); this.props.settingFunc()}}>
       {this.props.setting}
       </section>
-      <section className="nav-op2"><Menu/></section>
+      {/* <section className="nav-op2"><Menu/></section> */}
     </div>
     )
   }

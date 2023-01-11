@@ -1,9 +1,19 @@
+@media(max-width: 1200px){
+    .footer{
+        height:100vh;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-size: 10vw;
+
+    }
+}
+@media (min-width: 1200px){
 .footer{
     height:100vh;
     ul, article{
         padding:0%;
         margin: 0%;
-        text-transform: capitalize;
         text-decoration: none;
         
     }
@@ -20,4 +30,6 @@
     height: 99vh;
     
     }
+}
+
 }

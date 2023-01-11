@@ -37,6 +37,7 @@ render() {
           <Header/>
           <Bio/>
           <Career/>
+          
           <Footer/>
         </div>
       )

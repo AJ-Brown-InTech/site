@@ -5,11 +5,16 @@
     padding: 3%;
     height: 7vh;
     width: 100vw;
-
+    
     .nav-op1{
         position:fixed;
         left: 2%;
-        
+      
+        border-radius: 10%;
+        padding: 1%;
+    }
+    .nav-op1:hover{
+        background-color: crimson;
     }
     .nav-op2{
         position:fixed;
