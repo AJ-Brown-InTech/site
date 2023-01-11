@@ -8,7 +8,8 @@ import Career from './Components/Career/Career'
 import Footer from './Components/Footer/Footer'
 import './styles/main.scss'
 // ! custom designs
-//import Cursor from './lib/cursor'
+import Cursor from './lib/cursor'
+
 
 
 
@@ -35,9 +36,12 @@ export default class  App extends Component{
     } 
   }
 render() {
+
+
       return (
-        <main className=' Main' style={{backgroundColor:(this.state.mode ==true? 'whitesmoke': 'black'),color: this.state.mode == true? 'black': 'whitesmoke'}}>
-          {/* //<Cursor/> */}
+        <main  className=' Main' style={{backgroundColor:(this.state.mode ==true? 'whitesmoke': 'black'),color: this.state.mode == true? 'black': 'whitesmoke'}}>
+     <Cursor/>
+        
           <Navbar setting={this.state.setting} mode={this.state.mode} toggleFunc={onclick=()=>this.setState({mode:!this.state.mode})} settingFunc={onclick=()=> this.SettingsSync()}/> 
           <Header/>
           <Bio/>

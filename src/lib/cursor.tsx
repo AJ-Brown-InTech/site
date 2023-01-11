@@ -1,26 +1,44 @@
-import { useRef } from "react"
-import '../styles/cursor.scss'
-const Cursor = ()=> {
-    const dot = useRef(null)
-    const dotoutline = useRef(null)
-    console.log(dotoutline)
-    const delay = 18;
-    const cursVisable = useRef(true);
-    const cursEnlarged = useRef(false);
+import { useEffect, useState } from "react";
+import "../styles/cursor.scss";
 
-    const endX = useRef(window.innerWidth/ 2);
-    const endY = useRef(window.innerHeight / 2);
+interface Props{
+    events: number;
+}
+function useMousePosition() {
+  const [mousePosition, setMousePosition] = useState({ x: null, y: null });
 
-    const _x = useRef(0)
-    const _y = useRef(0)
-    const requestRef = useRef(null)
-    return(
-        <span>
+  useEffect(() => {
+    const mouseMoveHandler = (event: { clientX: any; clientY: any; } ) => {
+      const { clientX, clientY } = event;
+      setMousePosition({ x: clientX, y: clientY });
+    };
+    document.addEventListener("mousemove", mouseMoveHandler);
 
-        <div ref={dotoutline} className="cursor-dot-outline"></div>
-        <div ref={dot} className="cursor-dot"></div>
-        </span>
-    )
+    return () => {
+      document.removeEventListener("mousemove", mouseMoveHandler);
+    };
+  }, []);
+
+  return mousePosition;
 }
 
-export default Cursor
+const DotRing = () => {
+    // 1.
+  const { x, y } = useMousePosition();
+  return (
+    <>
+            {/* 2. */}
+      <div
+        style={{ left: `${x}px`, top: `${y}px` }}
+        className="ring"
+      ></div>
+            {/* 3. */}
+      <div
+        className="dot"
+        style={{ left: `${x}px`, top: `${y}px` }}
+      ></div>
+    </>
+  );
+};
+
+export default DotRing;
