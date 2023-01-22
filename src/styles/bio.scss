@@ -1,7 +1,7 @@
-@media (max-width: 1000px){
+@media (max-width: 1200px){
     .bio{
         text-align: center;
-        height: 100vh;
+        height: 90vh;
         .bio-1{
           background-image: url("https://images.unsplash.com/photo-1672862273558-0608c644a41a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
           width: 100%;
@@ -14,13 +14,13 @@
             grid-template-rows: .5fr .5fr;
                     .bio-title{
                         // text-transform: uppercase;
-                        font-size: 10vw;
+                        font-size: 5vw;
                         margin:2%;
                         font-weight: 600;
                     }
                     .bio-sub1{
                         text-transform: capitalize;
-                        font-size: 6vw;
+                        font-size: 3vw;
                         margin:4%;
                         color: crimson;
                         font-weight: 400;
@@ -34,12 +34,13 @@
       }
       
 }
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
 .bio{
     height:70vh;
     display: grid;
     grid-template-columns: 2fr .2fr 1.5fr;
-    padding: 5%;
+    padding: 0%;
+    text-align: center;
 
     .bio-1{
     background-image: url("https://images.unsplash.com/photo-1672862273558-0608c644a41a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");

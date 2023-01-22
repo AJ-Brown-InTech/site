@@ -1,23 +1,25 @@
 
-@media(max-width: 1000px){
+@media(max-width: 1200px){
+    .career-box{
+        height: fit-content;
+        width: fit-content;
+       text-align: center;
+       justify-content: center;
+       
+    }
     .career{
-        height:100vh;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        font-size: 8vw;
-        margin-bottom: 100%;
+     
+        height:65vh;
+        width: fit-content;
     
         }
 
         .c-title{
-            font-size: 15vw;
-            text-align: center;
+            font-size: 5vw;
             font-weight: 600;
             //text-transform: uppercase;
             span{
-                font-size: 15vw;
-                text-align: center;
+                font-size: 5vw;
                 font-weight: 600;
                // text-transform: uppercase;
             color: crimson
@@ -25,24 +27,27 @@
         }
         .c-img{
             background-image: url("https://images.unsplash.com/photo-1581297848080-c84ac0438210?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
-            height: 60vh;
+            height: 30vh;
             font-weight: 900;
             background-attachment:fixed;
+            width: 100vw;
             background-position: 100%;
             }
 
         
             .c-cont{
-               
-                    font-size: 7vw;
                     text-transform: capitalize;
                     text-decoration: none;
                 
             }
+
+            .c-txt{
+            font-size: 1.5em;
+            }
     }
 
 
-@media (min-width: 1000px){
+@media (min-width: 1200px){
     .career{
         height:70vh;
         

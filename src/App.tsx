@@ -1,6 +1,5 @@
 // * load components and Depedencies
 import React, { Component } from 'react'
-import { Interface } from 'readline';
 import Navbar from './Components/Navbar/Navbar'
 import Bio from './Components/Bio/Bio'
 import Header from './Components/Header/Header'

@@ -7,8 +7,12 @@ body{
 }
 .Main {
   font-family: 'Questrial', sans-serif, 'Helvetica Neue';
-  overflow: hidden;
+
   
 }
-
-
+@media (max-width: 1100px) {
+  
+  .Main{
+      overflow: 'hidden';
+    }
+}
